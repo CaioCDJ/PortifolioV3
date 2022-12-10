@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  color:#f5f5f5;
+  border: 0;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #131316;
+}
+
+h1{
+  color: transparent;
+  font-size: 15vh;
+  font-weight: bolder;
+  background:url("https://images.pexels.com/photos/1998922/pexels-photo-1998922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: auto 200%;
+  background-clip: text;
+  --webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
+}
+
+.section{
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+.side{
+  display: grid;
+  grid-template-columns: 50% 50%; 
+}
+
+#intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#intro h4{
+  font-size: 3vh;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+#about p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+#bio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#info img{
+  border-radius: 30%;
+}
+
+#info div ul{
+  margin-top: 15px;
+  list-style: square;
+}
+
+#contact form{
+  display: flex;
+  flex-flow: column;
+}
+
+#contact form>*{
+  margin-top: 5px;
+}
+
+input{
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+footer{
+
+}
+
+
+/*-- mobile --*/
+
