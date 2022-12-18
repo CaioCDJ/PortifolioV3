@@ -5,12 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
   <body>
 
     <!-- navbar -->
+    
     <header>
+      <h2>Caio Corrêa</h2>
+      <nav>
+        <button id="btnNavbar"><i class="bi bi-list"></i></button>
+        <ul id="navbar">
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#intro">About me</a></li>
+          <li><a href="#intro">Experiences and Formation</a></li>
+          <li><a href="#intro">Stack</a></li>
+          <li><a href="#intro">Projects</a></li>
+          <li><a href="#intro">Contact</a></li>
+        </ul>
+
+      </nav>
       
     </header>
 
@@ -18,25 +32,41 @@
       
       <!-- introducao -->
       
-      <div id="intro" class="section">
+      <section id="intro" class="center">
         <div>
           <h1>Ola, eu sou o Caio.</h1>
           <h4>Desenvolvedor C# | .AspCore | NodeJS</h4>  
         </div>
-      </div>  
+      </section>  
 
       <!-- sobre/bio -->
 
-      <div id="about" class="section side">
+      <section id="about" class="center">
        
         <div id="bio">
           <div>
-            <h2>A little about me </h2> 
-            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+            <h2>A little about me </h2>  
+              <p>
+                Sempre utilizei o computador de um modo geral para lazer,
+                pesquisas, trabalhos escolares, explorando a internet de 
+                forma descompromissada, porém, ao mesmo tempo, foi inevitável 
+                a curiosidade para aprender mais sobre esse universo, que foi 
+                acontecendo aos poucos.
+              </p>
+              <p>
+                Em um certo momento, quando estava cursando o ensino médio, decidi 
+                ingressar no curso técnico de Análise e Desenvolvimento de Sistemas 
+                na instituição ETEC Dra. Ruth Cardoso, onde descobri o mundo do                   
+                desenvolvimento, pelo qual sou fascinado e me formei Técnico.
+              </p>
+              <p>
+                Atualmente estou cursando o último semestre do ensino superior em 
+                Análise e Desenvolvimento de Sistemas na Faculdade de São Vicente - UNIBR.
+              </p>
+              <p>
+                Busco sempre aprimorar meus conhecimentos e me manter antenado com 
+                as novidades, por isso gosto de testar e desenvolver diversas tecnologias.
+              </p>
           </div>
         </div> 
        
@@ -48,44 +78,124 @@
             <li><strong>Location: </strong>São Vicente - SP</li>
           </ul>
        </div>
-      </div>
+      </section>
 
       <!-- Formation and Experiences -->
+      
+      <section id="formation" class="center">
+        
+        <div id="options">
+          <button class="btnForm">Formação</button> 
+          <button class="btnForm">Experiencia</button> 
+        </div>
+      
+        <div class="timeline">
 
+          <div class="container left job">
+            <div class="content">
+              <h3>Empresa</h3>
+              <h5>05/2022-11/2022</h5>
+              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+          
+          <div class="container left formation">
+            <div class="content">
+              <h3>Etec Dra Ruth Cardoso</h3>
+              <h5>07/2018-12/2019</h5>
+              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+
+          <div class="container right formation">
+            <div class="content">
+              <h3>Unibr</h3>
+              <h5>02/2020 - current</h5>
+              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+     
       <!-- Stack -->
 
-      <!-- Projetos -->
-    
-      <!-- Contato -->
+      <section id="stack" class="center">
+        
+        <div id="main">
+          
+          <p>Tecnologias nas quais possuo mais conhecimento.</p>
+        </div>
       
-      <div id="contact" class="section side">
-       
+        <div id="otherSkills">
+        
+          <div>
+            <h3>Others</h3>
+
+          </div> 
+          
+          <div>
+            <h3>Ferramentas</h3>
+          </div>
+
+        </div>
+      
+      </section>
+
+      <!-- Projetos -->
+      
+      <section id="projects">
+        
+        <!-- Comandas -->
         <div>
-     
-          <h2>Contact</h2>
-          <!--
-            - email
-            - linkedin
-            - github
-          -->
+        
+        </div> 
+        
+        <!-- Recyclo -->
+        <div>
+
         </div>
 
-          <form>
-           <h3>Send me an email.</h3>
-            <input required type="text" name="name" placeholder="Seu Nome:">
-            <input required type="email" name="email" placeholder="Seu E-mail:">
-            <textarea required rows="5" name="message" placeholder="Mensagem:"></textarea>
-            <input type="submit" value="enviar">
-          </form>
-        
-      </div>
+        <!-- Notes -->
+        <div>
+          
+        </div>
+
+      </section>
+
+      <!-- devSolitario -->
+
+      <!-- Contato -->
+      
+      <section id="contact" class="side">
+     
+        <form>
+          <h2>Send me an e-mail</h2>
+          <input required type="email" name="email" placeholder="E-Mail:">
+          <input required type="text" name="subject" placeholder="Subject:">
+          <textarea required name="message" placeholder="Message:"></textarea>
+          <input type="submit" name="submit" value="Enviar">
+        </form>
+
+        <div id="contactInfo">
+          <h2>Informações para contato</h2>
+          <ul>
+            <li>
+              <a title="Email" href="mailto:caioidjesus1@hotmail.com"><i class="bi bi-envelope"></i> caiodjesus1@hotmail.com</a>
+            </li>
+            <li>
+              <a title="Perfil do linkedin" href=""><i class="bi bi-linkedin"></i> Linkedin</a>
+            </li>
+            <li>
+              <a title="Perfil do Github" href=""><i class="bi bi-github"></i> Github</a>
+            </li>
+          </ul>
+        </div>
+
+      </section> 
 
     </main>
-
-    <footer>
-      
-    </footer>
-
+    
     <script src="./script.js"></script>
   </body>
 </html>
