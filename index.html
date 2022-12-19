@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
 
     <!-- navbar -->
     
     <header>
-      <h2>Caio Corrêa</h2>
       <nav>
-        <button id="btnNavbar"><i class="bi bi-list"></i></button>
+        <h2>Portifolio</h2>
         <ul id="navbar">
           <li><a href="#intro">Home</a></li>
           <li><a href="#intro">About me</a></li>
@@ -23,7 +23,7 @@
           <li><a href="#intro">Projects</a></li>
           <li><a href="#intro">Contact</a></li>
         </ul>
-
+        <button id="btnNavbar"><i class="bi bi-list"></i></button>
       </nav>
       
     </header>
@@ -71,12 +71,19 @@
         </div> 
        
        <div id="info">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.uKZ4930VMo7un08ieg4tXQHaFj%26pid%3DApi&f=1&ipt=ced7a7d055455a598618c81c16adf0562d67e8e1ab80408556fde2439f7f91bf&ipo=images" alt="">
-          <ul>
-            <li><strong>Nome Completo: </strong>Caio Corrêa de Jesus</li>
-            <li><strong>Idade: </strong>21</li>
-            <li><strong>Location: </strong>São Vicente - SP</li>
-          </ul>
+        
+        <div id="card">
+          <!-- img???? -->
+          <h3>Caio Corrêa de Jesus</h3>
+          <div>
+            <!--
+              nome completo
+              idade
+              natural
+            -->
+          </div>
+        </div>
+
        </div>
       </section>
 
@@ -99,6 +106,14 @@
             </div>
           </div>
           
+          <div class="container left formation">
+            <div class="content">
+              <h3>Wizard - Curso de ingles</h3>
+              <h5>02/2017-07/2019</h5>
+              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+         
           <div class="container left formation">
             <div class="content">
               <h3>Etec Dra Ruth Cardoso</h3>
@@ -167,17 +182,17 @@
 
       <!-- Contato -->
       
-      <section id="contact" class="side">
+      <section id="contact" class="center">
      
         <form>
           <h2>Send me an e-mail</h2>
           <input required type="email" name="email" placeholder="E-Mail:">
           <input required type="text" name="subject" placeholder="Subject:">
           <textarea required name="message" placeholder="Message:"></textarea>
-          <input type="submit" name="submit" value="Enviar">
+          <input id="btnSend" type="submit" name="submit" value="Enviar">
         </form>
 
-        <div id="contactInfo">
+        <div id="contactInfo" class="center">
           <h2>Informações para contato</h2>
           <ul>
             <li>
