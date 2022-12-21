@@ -4,7 +4,8 @@
 :root{
   --textColor:#f5f5f5;
   --titleColor:#f2f2f2;
-  --background:#131316;
+  --background:#0C0E18;
+  --blue:#227EFC;
   --lightBackgroundHover:#1e1e20;
   --lightBackground:#0C0E18;
 }
@@ -70,6 +71,8 @@ section{
   align-items: center;
 }
 
+/*-- navbar --*/
+
 header{
   width: 100%;
 }
@@ -88,6 +91,14 @@ nav ul{
   align-items: center;
 }
 
+nav ul li a{
+  color: var(--textColor);
+}
+
+nav ul li a:hover{
+  color: var(--blue);
+}
+
 nav ul>*{
   margin-left: 20px;
   font-weight: 600;
@@ -97,6 +108,7 @@ nav ul>*{
 #btnNavbar{
   display: none;
 }
+
 
 #intro div{
   text-align:center;
@@ -117,12 +129,41 @@ nav ul>*{
 #bio{
   text-align: justify;
   text-indent: 20px;
+  padding: 20px;
 }
 
 #bio h2{
   margin-bottom: 10px;
 } 
 
+#card{
+  border-style: solid;
+  border-color: var(--titleColor);
+  box-shadow: 0 0 10px #719ECE;
+  width: 70%;
+  flex-flow: column;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, #0B1A29, #161925, #050610);
+}
+
+#card img{
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#card ul {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+#card ul li{
+  display: flex;
+}
+
+#card ul li>*{
+  margin-top: 5px;
+}
 
 
 #formation{
@@ -133,7 +174,7 @@ nav ul>*{
 #formation>*{ margin-top: 30px;}
 
 .btnForm{
-  background: var(--background);
+  background: var(--lightBackground);
   padding: 10px;
   font-weight: 900;
   color:  var(--titleColor);
@@ -242,6 +283,11 @@ nav ul>*{
 }
 
 
+#contact{
+  flex-flow: column;
+  height: auto;
+}
+
 #contact>*{
   width: 50%;
 }
@@ -249,15 +295,20 @@ nav ul>*{
 #contact form{
   display: flex;
   flex-flow: column;
+  margin-top: 15px;
 }
 
+#contact form h4{
+  font-style: italic;
+  text-align: center;
+}
 #contact form>*{
   margin-top: 10px;
 }
 
 #contact form input{
   padding: 10px;
-  background-color: var(--lightBackground); 
+  background-color: var(--background); 
   border-radius: 5px;
 }
 
@@ -270,10 +321,19 @@ nav ul>*{
 }
 
 #contact form textarea{
-  background-color: var(--lightBackground);  
+  background-color: var(--background);  
   padding: 10px;
   resize: none;
-  height: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+#contact form textarea:focus{
+  border-width: 2px;
+  outline: none !important;
+  border-style: solid;
+  border-color: var(--titleColor);
+  box-shadow: 0 0 10px #719ECE;
 }
 
 #btnSend:hover{
@@ -281,15 +341,34 @@ nav ul>*{
 }
 
 #contactInfo{
-  padding: 30px;
+  padding: 10px;
   flex-flow: column;
   justify-content: space-between;
 }
 
-#contactInfo>*{margin-top: 10px;}
-#contactInfo ul>*{margin-top: 10px;}
+#contactInfo p{
+  font-size: 13px;
+  text-align: center;
+}
 
-#contactInfo ul li a{
-  font-size: 25px;
+#contactInfo>*{margin-top: 10px;}
+
+#contactInfo div{
+  font-size: 30px;
+}
+
+#contactInfo div>*{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#contactInfo div a{
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#contactInfo div a i:hover{
+  color: var(--blue);
 }
 
