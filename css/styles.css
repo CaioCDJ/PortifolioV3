@@ -27,18 +27,6 @@ body{
 	animation: gradient 30s ease infinite;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 main>*{
   margin-top: 20px;
 }
@@ -174,11 +162,12 @@ nav ul>*{
 #formation>*{ margin-top: 30px;}
 
 .btnForm{
-  background: var(--lightBackground);
+  background: transparent;
   padding: 10px;
   font-weight: 900;
   color:  var(--titleColor);
   font-size: 30px;
+  cursor:pointer;
 }
 /* -- credits to w3schools -- */
 /* The actual timeline (the vertical ruler) */
@@ -282,6 +271,72 @@ nav ul>*{
   width: 50%;
 }
 
+/*-- projects --*/
+
+#projects{
+  height: auto;
+}
+
+#projects{
+  text-align: center;
+}
+
+.project{
+  display: flex;  
+  flex-flow: row;
+}
+
+.project>*{
+  margin-top: 20vh;
+}
+
+.reverseRow{
+  flex-flow: row-reverse;
+}
+
+.projectImg{
+  width: 40%;
+}
+
+.projectImg img{
+  height: 100%;
+  width: 100%;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  border-radius: 15%;
+}
+
+.projectInfo{
+  text-align: justify;
+  text-indent: 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+.projectInfo div{
+  font-size: 30px;
+  text-align: center;
+}
+
+.projectInfo div a{
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--textColor);
+}
+
+.projectInfo div a i{
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.projectInfo div a:hover{
+  color: var(--blue);
+  border-radius: 5px;
+  outline: none !important;
+  border-style: solid;
+  border-color: var(--titleColor);
+  box-shadow: 0 0 10px #719ECE;
+}
 
 #contact{
   flex-flow: column;

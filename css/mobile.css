@@ -1,0 +1,67 @@
+
+/*-- mobile --*/
+
+@media only screen and (max-width: 600px) {
+  
+  header{
+    top: 0;
+    position: fixed;
+    backdrop-filter: blur(8px);
+  }
+
+  nav{
+
+  }
+
+  #navbar{
+    display:none;
+  }
+  
+  h1{
+    font-size: 5vh;
+  }
+  
+  section{
+    height: auto;
+  }
+  
+  #intro{
+    height: 100vh;
+  }
+
+  /* -- bio -- */
+  #about{
+    flex-flow: column;
+    padding: 5px;
+  }
+
+  #about>*{
+    width: auto;
+  }
+
+  #bio{
+    padding: 20px;
+  }
+
+  #info{
+    margin-top: 10px;
+    display: none;
+  }
+
+  /* -- timeline -- */
+  
+  /* -- project  -- */
+  
+  /* -- stack -- */
+  
+
+  /* -- contact -- */
+  #contact>*{
+    width: auto;
+  }
+  #contact form{
+    width: 35vh;
+  }
+
+}
+
