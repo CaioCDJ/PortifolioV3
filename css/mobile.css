@@ -49,7 +49,47 @@
   }
 
   /* -- timeline -- */
+
+  .timeline{
+    position:initial
+  }
+
+  .timeline::after{
+    width: 0;
+  }
+
+  .btnForm{
+    font-size: 1.4rem;
+  }
+
+  .right{
+    left: 0;
+  }
+
+  .left::before{
+    content: none;
+  }
+
+  .container::after{
+    background: transparent;
+    border: none;
+  }
+
+  .right::before{
+    content: none;
+  }
   
+  .container{
+    padding: 10px 20px;
+    width: auto;
+  }
+
+  .content{
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+
+
   /* -- project  -- */
   
   /* -- stack -- */

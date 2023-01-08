@@ -28,7 +28,7 @@ body{
 }
 
 main>*{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 h1{
@@ -263,31 +263,27 @@ nav ul>*{
   border-width: 2px;
 }
 
-#stack{
-  flex-flow: row;
-}
-
-#stack>*{
-  width: 50%;
-}
-
 /*-- projects --*/
 
 #projects{
   height: auto;
+  text-align: center;
 }
 
-#projects{
-  text-align: center;
+#projects h2{
+  margin-bottom: -20px;
+}
+
+#projects:nth-child(2){
+  margin-top: 10px;
+  background-color: red;
 }
 
 .project{
   display: flex;  
   flex-flow: row;
-}
-
-.project>*{
-  margin-top: 20vh;
+  height: 45vh;
+  margin-top: 40px;
 }
 
 .reverseRow{
@@ -300,7 +296,6 @@ nav ul>*{
 
 .projectImg img{
   height: 100%;
-  width: 100%;
   -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   border-radius: 15%;
 }
@@ -329,14 +324,15 @@ nav ul>*{
   margin-right: 10px;
 }
 
-.projectInfo div a:hover{
+.projectLink:hover i{
   color: var(--blue);
-  border-radius: 5px;
-  outline: none !important;
-  border-style: solid;
-  border-color: var(--titleColor);
-  box-shadow: 0 0 10px #719ECE;
 }
+
+.projectLink:hover > a{
+  color: var(--blue);
+}
+
+/*-- contact --*/
 
 #contact{
   flex-flow: column;
