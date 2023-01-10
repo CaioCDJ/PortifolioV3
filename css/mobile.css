@@ -1,20 +1,39 @@
 
-/*-- mobile --*/
+.openMenu{
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+}
 
-@media only screen and (max-width: 600px) {
+/*-- mobile - vertical --*/
+
+@media only screen and (max-width: 800px) {
   
   header{
     top: 0;
     position: fixed;
     backdrop-filter: blur(8px);
+    z-index: 2;
   }
-
-  nav{
-
+  
+  #btnNavbar{
+    display: initial;
+    font-size: 24px;
+    background-color: transparent;
   }
 
   #navbar{
     display:none;
+    right: 0;
+    margin-top: 30px; 
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    border-radius: 3px;
+  }
+
+  #navbar li{
+    text-align: right;
+    margin-top: 20px;
   }
   
   h1{

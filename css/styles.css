@@ -25,6 +25,11 @@ body{
   background: linear-gradient(-45deg, #0B1A29, #161925, #070B19, #050610);
 	background-size: 400% 400%;
 	animation: gradient 30s ease infinite;
+  overflow-x: hidden;
+}
+
+main{
+  flex-flow: column;
 }
 
 main>*{
@@ -33,7 +38,7 @@ main>*{
 
 h1{
   color: var(--titleColor);
-  font-size: 13vh;
+  font-size: 6.8rem;
   font-weight: bolder;
   padding: 15px;
   border-width: 2px;
@@ -51,6 +56,7 @@ h2,h3,h4{
 section{
   height: 100vh;
   padding: 20px;
+  max-width: 1400px;
 }
 
 .center{
