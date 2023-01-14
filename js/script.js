@@ -2,6 +2,10 @@
 const btn = document.querySelector("#btnNavbar");
 const ul = document.querySelector("#navbar");
 
+const timeline = document.querySelectorAll(".container");
+let btnForm = document.querySelector("#btnFormation");
+let btnExp = document.querySelector("#btnExp");
+
 let isOpen = false;
 
 // mobile navbar 
@@ -20,5 +24,31 @@ btn.addEventListener("click",()=>{
 });
 
 
+// timeline
+
+btnForm.addEventListener("click",()=>hideShow("formation",btnForm));
+
+btnExp.addEventListener("click",()=>hideShow("job",btnExp));
+
+
+function hideShow(type="job", btn){
+  
+  timeline.forEach(container=>{
+
+    if(btn != btnExp) btnExp.classList.remove("btnActive")
+    
+    else btnForm.classList.remove("btnActive")
+
+    if(container.classList.contains(type)){
+      container.classList.add("show");
+      container.classList.remove("hidden");
+      btn.classList.add("btnActive");
+    } else{
+      container.classList.remove("show");
+      container.classList.add("hidden");
+      btn.classList.remove("btnActive");
+    }
+  })
+}
 // email Sender
 

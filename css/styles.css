@@ -163,6 +163,7 @@ nav ul>*{
 #formation{
   flex-flow: column;
   height: auto;
+  min-height: 100vh;
 }
 
 #formation>*{ margin-top: 30px;}
@@ -174,6 +175,10 @@ nav ul>*{
   color:  var(--titleColor);
   font-size: 30px;
   cursor:pointer;
+}
+
+.btnActive{
+  color: var(--blue);
 }
 /* -- credits to w3schools -- */
 /* The actual timeline (the vertical ruler) */
@@ -268,6 +273,17 @@ nav ul>*{
   border-style: solid;
   border-width: 2px;
 }
+.content>*{
+  margin-top: 5px;
+}
+
+.hidden{
+  display: none;
+}
+.show{
+  display: block;
+}
+
 
 /*-- projects --*/
 
