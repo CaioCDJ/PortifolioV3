@@ -15,7 +15,11 @@
     backdrop-filter: blur(8px);
     z-index: 2;
   }
-  
+ 
+  main>*{
+    height: auto;
+  }
+
   #btnNavbar{
     display: initial;
     font-size: 24px;
@@ -111,8 +115,27 @@
 
   /* -- project  -- */
   
-  /* -- stack -- */
+  #projects{
+    height: auto;
+  }
   
+  .project{
+    display: inline;
+  }
+  
+  .projectImg{
+    width: auto;
+  }
+
+  .projectInfo{
+    width: 100%;
+  }
+  
+  .projectInfo div{
+    font-size: 20px;
+    padding: 0;
+  
+  }
 
   /* -- contact -- */
   #contact>*{

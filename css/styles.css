@@ -274,6 +274,8 @@ nav ul>*{
 #projects{
   height: auto;
   text-align: center;
+  padding: 20px;
+  width: 90%;
 }
 
 #projects h2{
@@ -288,29 +290,41 @@ nav ul>*{
 .project{
   display: flex;  
   flex-flow: row;
-  height: 45vh;
   margin-top: 40px;
+  max-height: 400px;
 }
 
 .reverseRow{
   flex-flow: row-reverse;
 }
 
+.reverseRow h4{
+  text-align: left;
+}
+
 .projectImg{
   width: 40%;
+  padding: 20px;
 }
 
 .projectImg img{
   height: 100%;
   -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   border-radius: 15%;
+  width:100%;
 }
 
 .projectInfo{
   text-align: justify;
   text-indent: 20px;
-  padding: 20px;
-  width: 50%;
+  padding-inline: 5%;
+  width: 60%;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.projectInfo h4{
+  width: 100;
 }
 
 .projectInfo div{
@@ -346,7 +360,7 @@ nav ul>*{
 }
 
 #contact>*{
-  width: 50%;
+  width: 80%;
 }
 
 #contact form{
