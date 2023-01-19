@@ -6,9 +6,14 @@ const timeline = document.querySelectorAll(".container");
 let btnForm = document.querySelector("#btnFormation");
 let btnExp = document.querySelector("#btnExp");
 
-let isOpen = false;
+
+function load(){ 
+  hideShow("formation", btnForm);
+}
 
 // mobile navbar 
+
+let isOpen = false;
 
 btn.addEventListener("click",()=>{
   

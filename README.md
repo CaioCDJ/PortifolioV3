@@ -3,8 +3,6 @@
 
 Terceira versão do meu portifolio.
 
-[Liink]() 
-
 
 ## Portifolios anteriores 
 

@@ -71,6 +71,14 @@
     display: none;
   }
 
+  /*-- stack --*/
+
+  #stack{
+    display: flex;
+    flex-flow: column;
+    height: auto;
+  }
+
   /* -- timeline -- */
 
   .timeline{
