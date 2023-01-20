@@ -433,30 +433,29 @@ nav ul>*{
 
 .projectInfo h4{
   width: 100;
+  text-align: left;
 }
 
-.projectInfo div{
-  font-size: 30px;
-  text-align: center;
-}
-
-.projectInfo div a{
-  padding: 20px;
+.projectLink{
+  margin-top: 20px;
+  flex-flow: row;
+  gap: 10px;
   font-size: 20px;
-  text-align: center;
+}
+
+.projectLink a{
   color: var(--textColor);
 }
 
-.projectInfo div a i{
-  font-size: 25px;
-  margin-right: 10px;
+.projectLink a > i{
+  margin-right: 5px;
 }
 
-.projectLink:hover i{
+.projectLink div:hover i{
   color: var(--blue);
 }
 
-.projectLink:hover > a{
+.projectLink div:hover > a{
   color: var(--blue);
 }
 
@@ -550,4 +549,3 @@ nav ul>*{
 #contactInfo div a i:hover{
   color: var(--blue);
 }
-

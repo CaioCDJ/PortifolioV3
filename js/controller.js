@@ -18,7 +18,6 @@ class Controller {
     this.btnExp.addEventListener("click", () => { this.hide("job", this.btnExp) });
 
     this.hide("formation", this.btnForm);
-    this.success()
   }
 
 
@@ -37,36 +36,40 @@ class Controller {
 
   hide(type = "job", btn) {
 
-    if (btn != this.btnExp)
+    if (btn != this.btnExp) {
       this.btnExp.classList.remove("btnActive")
-
-    else
+      this.btnForm.classList.add("btnActive")
+    }
+    else {
       this.btnForm.classList.remove("btnActive")
-
+      this.btnExp.classList.add("btnActive")
+    }
     this.timeline.forEach(container => {
 
       if (container.classList.contains(type)) {
         container.classList.add("show");
         container.classList.remove("hidden");
-        btn.classList.add("btnActive");
       } else {
         container.classList.remove("show");
         container.classList.add("hidden");
-        btn.classList.remove("btnActive");
       }
     })
   }
 
 
-  submit(){
+  submit() {
 
   }
 
-  success(){
+  success() {
     Swal.fire(
-  'Good job!',
-  'You clicked the button!',
-  'success'
-)
+      'Good job!',
+      'You clicked the button!',
+      'success'
+    )
+  }
+
+  error() {
+
   }
 }

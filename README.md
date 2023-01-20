@@ -1,15 +1,64 @@
-
 <h1 align="center">Portifolio</h1>
 
-Terceira versão do meu portifolio.
+![intro](./imgs/homePage.png) 
 
+<div align="center">
+
+![GitHub last commit](https://img.shields.io/github/last-commit/CaioCDJ/PortifolioV3)
+
+</div>
+
+#
+
+<h2 align="center">EM DESENVOLVIMENTO</h2>
+
+#
+
+Terceira versão do meu portifolio.
+Desenvolvido de forma simples utilizando o minimo de bibiliotecas. 
+
+<h2 align="center">
+
+[View Deployment](https://portifoliocaiocdj.000webhostapp.com/)
+</h2>
+
+## Tasks
+
+- [X] intro
+
+- [ ] about
+
+- [X] stack
+
+- [x] timeline
+
+- [x] projects
+
+- [ ] contact
+
+- [ ] send e-mail
+
+- [ ] animations??
+
+- [ ] texts
+
+<br>
 
 ## Portifolios anteriores 
 
-<div>
+<br>
 
-[Portifolio](www.google.com) 
+### Portifolio 
 
-[PortifolioV2](www.google.com) 
 
-<div>
+[Repositorio](https://github.com/CaioCDJ/Portifoliowww.google.com) 
+
+[live](https://caiocdj.github.io/Portifolio/)
+
+
+### Portifolio V2
+
+[Repositorio](https://github.com/CaioCDJ/PortifolioV2)
+
+[Live](https://caiocdj.github.io/PortifolioV2/)
+
