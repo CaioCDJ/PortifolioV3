@@ -1,270 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Portifolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./css/animations.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
-    <link href="./css/mobile.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </head>
-  <body onload="load()">
 
-    <!-- navbar -->
-    
-    <header>
-      <nav>
-        <h2>Portifolio</h2>
-        <ul id="navbar">
-          <li><a href="#intro">About me</a></li>
-          <li><a href="#intro">Experiences and Formation</a></li>
-          <li><a href="#intro">Stack</a></li>
-          <li><a href="#intro">Projects</a></li>
-          <li><a href="#intro">Contact</a></li>
-        </ul>
-        <button id="btnNavbar"><i class="bi bi-list"></i></button>
-      </nav>
-      
-    </header>
+<head>
+  <title>Portifolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/animations.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+  <link href="./css/mobile.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <main class="center">
-      
-      <!-- introducao -->
-      
-      <section id="intro" class="center">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"
+    integrity="sha256-3A7QayeQTyaWMdcuWimEMzTIauIWscnhq/A3GfKCxiA=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+  <header>
+    <nav>
+      <h2>Portifolio</h2>
+      <ul id="navbar">
+        <li><a href="#intro">About me</a></li>
+        <li><a href="#intro">Experiences and Formation</a></li>
+        <li><a href="#intro">Stack</a></li>
+        <li><a href="#intro">Projects</a></li>
+        <li><a href="#intro">Contact</a></li>
+      </ul>
+      <button id="btnNavbar"><i class="bi bi-list"></i></button>
+    </nav>
+
+  </header>
+
+  <main class="center">
+
+    <!-- introducao -->
+
+    <section id="intro" class="center">
+      <div>
+        <h1>Ola, eu sou o Caio.</h1>
+        <h4>Desenvolvedor Full-Stack C# | .AspNetCore | NodeJS </h4>
+      </div>
+    </section>
+
+    <!-- sobre/bio -->
+
+    <section id="about" class="center">
+
+      <div id="bio">
         <div>
-          <h1>Ola, eu sou o Caio.</h1>
-          <h4>Desenvolvedor Full-Stack C# | .AspNetCore | NodeJS </h4>  
+          <h2>A little about me </h2>
+          <p>
+            Sempre utilizei o computador de um modo geral para lazer,
+            pesquisas, trabalhos escolares, explorando a internet de
+            forma descompromissada, porém, ao mesmo tempo, foi inevitável
+            a curiosidade para aprender mais sobre esse universo, que foi
+            acontecendo aos poucos.
+          </p>
+          <p>
+            Em um certo momento, quando estava cursando o ensino médio, decidi
+            ingressar no curso técnico de Análise e Desenvolvimento de Sistemas
+            na instituição ETEC Dra. Ruth Cardoso, onde descobri o mundo do
+            desenvolvimento, pelo qual sou fascinado e me formei Técnico.
+          </p>
+          <p>
+            Atualmente estou cursando o último semestre do ensino superior em
+            Análise e Desenvolvimento de Sistemas na Faculdade de São Vicente - UNIBR.
+          </p>
+          <p>
+            Busco sempre aprimorar meus conhecimentos e me manter antenado com
+            as novidades, por isso gosto de testar e desenvolver diversas tecnologias.
+          </p>
         </div>
-      </section>  
-
-      <!-- sobre/bio -->
-
-      <section id="about" class="center">
-       
-        <div id="bio">
-          <div>
-            <h2>A little about me </h2>  
-              <p>
-                Sempre utilizei o computador de um modo geral para lazer,
-                pesquisas, trabalhos escolares, explorando a internet de 
-                forma descompromissada, porém, ao mesmo tempo, foi inevitável 
-                a curiosidade para aprender mais sobre esse universo, que foi 
-                acontecendo aos poucos.
-              </p>
-              <p>
-                Em um certo momento, quando estava cursando o ensino médio, decidi 
-                ingressar no curso técnico de Análise e Desenvolvimento de Sistemas 
-                na instituição ETEC Dra. Ruth Cardoso, onde descobri o mundo do                   
-                desenvolvimento, pelo qual sou fascinado e me formei Técnico.
-              </p>
-              <p>
-                Atualmente estou cursando o último semestre do ensino superior em 
-                Análise e Desenvolvimento de Sistemas na Faculdade de São Vicente - UNIBR.
-              </p>
-              <p>
-                Busco sempre aprimorar meus conhecimentos e me manter antenado com 
-                as novidades, por isso gosto de testar e desenvolver diversas tecnologias.
-              </p>
-          </div>
-        </div> 
-        <div id="info" class="center">
-          <div id="card" class="center">
-            <!-- img -->
-            <img src="https://images.unsplash.com/photo-1558349699-1e1c38c05eeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ym94ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="boxerAuau">
-            <ul>
-              <li><strong>Nome: </strong><p id="name"> Caio Corrêa de Jesus</p></li>
-              <li><strong>Data de Nascimento: </strong><p id="birth"> 30/04/2001</p></li>
-              <li><strong>Naturalidade: </strong><p id="place"> Santos - SP</p></li>
-            </ul>    
+      </div>
+      <div id="info" class="center">
+        <div id="card" class="center">
+          <!-- img -->
+          <img
+            src="https://images.unsplash.com/photo-1558349699-1e1c38c05eeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ym94ZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="boxerAuau">
+          <ul>
+            <li><strong>Nome: </strong>
+              <p id="name"> Caio Corrêa de Jesus</p>
+            </li>
+            <li><strong>Data de Nascimento: </strong>
+              <p id="birth"> 30/04/2001</p>
+            </li>
+            <li><strong>Naturalidade: </strong>
+              <p id="place"> Santos - SP</p>
+            </li>
+          </ul>
         </div>
-        </div>       
-      </section>
+      </div>
+    </section>
 
-      <!-- stack and skills -->
-      <section id="stack" >
+    <!-- stack and skills -->
+    <section id="stack">
 
-        <div id="major" class="whiteBorder" >
-         <div id="majorInfo" class="center" >
+      <div id="major" class="whiteBorder">
+        <div id="majorInfo" class="center">
           <h2>Major skills</h2>
-          <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>  
-         </div> 
-         <div id="majorImgs" class="center">
-            <img class="iconsImgMajor" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />    
-            <img class="iconsImgMajor" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />    
-            <img class="iconsImgMajor" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />    
-            <img class="iconsImgMajor" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />    
-            <img class="iconsImgMajor" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />    
-            <img class="iconsImgMajor" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />    
-          </div>
+          <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+          <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
         </div>
-        
-        <div id="other" >
-      
-          <div id="minor" class="center whiteBorder">
-            <h2>Minor Skills</h2>
-            <div class="imgBox">
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />    
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />    
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />    
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />    
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />    
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />    
-            </div>
-          </div>
-          
-          <div id="tools" class="center whiteBorder">
-            <h2>Tools</h2>
-            <div class="imgBox">
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />    
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />    
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />    
-              <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />    
-            </div>
-          </div>
-
+        <div id="majorImgs" class="center">
+          <img class="iconsImgMajor"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+          <img class="iconsImgMajor"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
+          <img class="iconsImgMajor"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+          <img class="iconsImgMajor"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+          <img class="iconsImgMajor"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          <img class="iconsImgMajor"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
         </div>
-      
-      </section>
+      </div>
 
-      <!-- Formation and Experiences -->
-      
-      <section id="formation" >
-        
-        <div id="options">
-          <button id="btnFormation" class="btnForm">Formação</button> 
-          <button id="btnExp" class="btnForm">Experiencia</button> 
-        </div>
-      
-        <div class="timeline">
+      <div id="other">
 
-          <div class="container left job">
-            <div class="content">
-              <h3>Desenvolvedor FullStack Trainee</h3>
-              <h4>Clear Cloud Software</h4>
-              <h5>05/2022 - 11/2022</h5>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-            </div>
-          </div>
-          
-          <div class="container left formation">
-            <div class="content">
-              <h3>Curso de ingles</h3>
-              <h4>Wizzard</h4>
-              <h5>02/2017-07/2019</h5>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-            </div>
-          </div>
-         
-          <div class="container right formation">
-            <div class="content">
-              <h3>Analise e Desenvolvimento de Sistemas</h3>
-              <h4>Etec Dra Ruth Cardoso</h4>
-              <h5>07/2018-12/2019</h5>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-            </div>
-          </div>
-
-          <div class="container left formation">
-            <div class="content">
-              <h3>Anaise e Desenvolvimento de Sistemas</h3>
-              <h4>Unibr</h4>
-              <h5>02/2020 - current</h5>
-              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-            </div>
-          </div>
-        
-        </div>
-      </section>
-     
-      <!-- Projetos -->
-      
-      <section id="projects">
-       <h2>Projects</h2> 
-        
-        <!-- Calculadora -->
-     
-        <div class="project">
-          <div class="projectImg center">
-            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80" alt="">
-          </div>
-          <div class="projectInfo center">
-            <h4>Recyclo</h4>
-            <p>
-              Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore 
-              culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. 
-              Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum 
-              Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-            </p> 
-            <div class="center">
-              <div class="projectLink">
-                <a href=""><i class="bi bi-broadcast"></i>Ir no site</a>
-              </div>
-              <div class="projectLink">
-                <a href=""><i class="bi bi-github"></i>Repositorio</a>
-              </div>
-
-            </div>
-          </div>
-        </div> 
-        
-        <!-- Recyclo -->
-        <div class="project reverseRow">
-          <div class="projectImg center">
-            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80" alt="">
-          </div>
-          <div class="projectInfo center">
-            <h4>Recyclo</h4>
-            <p>
-              Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore 
-              culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. 
-              Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum 
-              Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-            </p> 
-            <div class="center">
-              <div class="projectLink">
-                <a href=""><i class="bi bi-broadcast"></i>Ir no site</a>
-              </div>
-              <div class="projectLink">
-                <a href=""><i class="bi bi-github"></i>Repositorio</a>
-              </div>
-
-            </div>
-          </div>
-        </div>       
-      
-      </section>
-
-      <!-- devSolitario -->
-
-      <!-- Contato -->
-      
-      <section id="contact" class="center">
-        <div id="contactInfo" class="center">
-          <h2>Onde me Encontrar</h2>
-          <p>Você tem alguma pergunta? Gostaria de um colaborador? Ou apenas ter uma conversa? </p>                       
-          <div>
-            <a title="Email" href="mailto:caioidjesus1@hotmail.com"><i class="bi bi-envelope"></i></a>
-            <a title="Perfil do linkedin" href=""><i class="bi bi-linkedin"></i></a>
-            <a title="Perfil do Github" href=""><i class="bi bi-github"></i></a>
+        <div id="minor" class="center whiteBorder">
+          <h2>Minor Skills</h2>
+          <div class="imgBox">
+            <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <img class="iconsImg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+            <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+            <img class="iconsImg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
+            <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+            <img class="iconsImg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
           </div>
         </div>
 
-        <form>
-          <h4>Send me an e-mail</h4>
-          <input required type="email" name="email" placeholder="E-Mail:">
-          <input required type="text" name="name" placeholder="Your Name:">
-          <input required type="text" name="subject" placeholder="Subject:">
-          <textarea required name="message" placeholder="Message:"></textarea>
-          <input id="btnSend" type="submit" name="submit" value="Enviar">
-        </form>
-        
-      </section> 
+        <div id="tools" class="center whiteBorder">
+          <h2>Tools</h2>
+          <div class="imgBox">
+            <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            <img class="iconsImg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
+            <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+            <img class="iconsImg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+          </div>
+        </div>
 
-    </main>
-    
-    <script src="./js/script.js"></script>
-  </body>
+      </div>
+
+    </section>
+
+    <!-- Formation and Experiences -->
+
+    <section id="formation">
+
+      <div id="options">
+        <button id="btnFormation" class="btnForm">Formação</button>
+        <button id="btnExp" class="btnForm">Experiencia</button>
+      </div>
+
+      <div class="timeline">
+
+        <div class="container left job">
+          <div class="content">
+            <h3>Desenvolvedor FullStack Trainee</h3>
+            <h4>Clear Cloud Software</h4>
+            <h5>05/2022 - 11/2022</h5>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
+              fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+              eam.</p>
+          </div>
+        </div>
+
+        <div class="container left formation">
+          <div class="content">
+            <h3>Curso de ingles</h3>
+            <h4>Wizzard</h4>
+            <h5>02/2017-07/2019</h5>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
+              fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+              eam.</p>
+          </div>
+        </div>
+
+        <div class="container right formation">
+          <div class="content">
+            <h3>Analise e Desenvolvimento de Sistemas</h3>
+            <h4>Etec Dra Ruth Cardoso</h4>
+            <h5>07/2018-12/2019</h5>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
+              fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+              eam.</p>
+          </div>
+        </div>
+
+        <div class="container left formation">
+          <div class="content">
+            <h3>Anaise e Desenvolvimento de Sistemas</h3>
+            <h4>Unibr</h4>
+            <h5>02/2020 - current</h5>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
+              fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
+              eam.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projetos -->
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Calculadora -->
+
+      <div class="project">
+        <div class="projectImg center">
+          <img
+            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80"
+            alt="">
+        </div>
+        <div class="projectInfo center">
+          <h4>Recyclo</h4>
+          <p>
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+            culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
+            Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum
+            Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
+          </p>
+          <div class="center">
+            <div class="projectLink">
+              <a href=""><i class="bi bi-broadcast"></i>Ir no site</a>
+            </div>
+            <div class="projectLink">
+              <a href=""><i class="bi bi-github"></i>Repositorio</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Recyclo -->
+      <div class="project reverseRow">
+        <div class="projectImg center">
+          <img
+            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1443&q=80"
+            alt="">
+        </div>
+        <div class="projectInfo center">
+          <h4>Recyclo</h4>
+          <p>
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore
+            culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
+            Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum
+            Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
+          </p>
+          <div class="center">
+            <div class="projectLink">
+              <a href=""><i class="bi bi-broadcast"></i>Ir no site</a>
+            </div>
+            <div class="projectLink">
+              <a href=""><i class="bi bi-github"></i>Repositorio</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- devSolitario -->
+
+    <!-- Contato -->
+
+    <section id="contact" class="center">
+      <div id="contactInfo" class="center">
+        <h2>Onde me Encontrar</h2>
+        <p>Você tem alguma pergunta? Gostaria de um colaborador? Ou apenas ter uma conversa? </p>
+        <div>
+          <a title="Email" href="mailto:caioidjesus1@hotmail.com"><i class="bi bi-envelope"></i></a>
+          <a title="Perfil do linkedin" href=""><i class="bi bi-linkedin"></i></a>
+          <a title="Perfil do Github" href=""><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+
+      <form>
+        <h4>Send me an e-mail</h4>
+        <input required type="email" name="email" placeholder="E-Mail:">
+        <input required type="text" name="name" placeholder="Your Name:">
+        <input required type="text" name="subject" placeholder="Subject:">
+        <textarea required name="message" placeholder="Message:"></textarea>
+        <input id="btnSend" type="submit" name="submit" value="Enviar">
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="./js/controller.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
