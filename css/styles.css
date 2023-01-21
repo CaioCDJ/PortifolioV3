@@ -8,6 +8,7 @@
   --blue:#227EFC;
   --lightBackgroundHover:#1e1e20;
   --lightBackground:#0C0E18;
+  --green: #20d8aa;
 }
 
 *{
@@ -53,6 +54,9 @@ h2,h3,h4{
   letter-spacing: 1px;
 }
 
+h2{
+ }
+
 section{
   height: 100vh;
   padding: 20px;
@@ -90,7 +94,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-  color: var(--blue);
+  color: var(--green);
+  font-weight: 900; 
 }
 
 nav ul>*{
@@ -172,7 +177,6 @@ nav ul>*{
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 40% 60%;
   flex-flow: column;
   padding: 20px 30px;
 }
@@ -270,7 +274,10 @@ nav ul>*{
 }
 
 .btnActive{
-  color: var(--blue);
+  color: var(--green);
+  font-weight: 900;
+  box-shadow: 2px var(--blue);
+  border-bottom: 1px solid var(--blue);
 }
 /* -- credits to w3schools -- */
 /* The actual timeline (the vertical ruler) */
@@ -417,6 +424,7 @@ nav ul>*{
 
 .projectImg img{
   height: 100%;
+  mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   border-radius: 15%;
   width:100%;
@@ -433,7 +441,7 @@ nav ul>*{
 
 .projectInfo h4{
   width: 100;
-  text-align: left;
+  align-self:  baseline;
 }
 
 .projectLink{
@@ -452,11 +460,12 @@ nav ul>*{
 }
 
 .projectLink div:hover i{
-  color: var(--blue);
+  color: var(--green);
+
 }
 
 .projectLink div:hover > a{
-  color: var(--blue);
+  color: var(--green);
 }
 
 /*-- contact --*/
@@ -514,8 +523,16 @@ nav ul>*{
   box-shadow: 0 0 10px #719ECE;
 }
 
+#btnSend{
+  background: transparent;
+}
+
 #btnSend:hover{
-  background-color: var(--lightBackgroundHover);  
+  bborder-width: 2px;
+  outline: none !important;
+  border-style: solid;
+  border-color: var(--green);
+  box-shadow: 0 0 10px #719ECE;ackground-color: var(--green);  
 }
 
 #contactInfo{
@@ -547,5 +564,5 @@ nav ul>*{
 }
 
 #contactInfo div a i:hover{
-  color: var(--blue);
+  color: var(--green);
 }

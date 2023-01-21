@@ -34,6 +34,8 @@ Desenvolvido de forma simples utilizando o minimo de bibiliotecas.
 
 - [x] projects
 
+- [X] chrome css and layout bugs
+
 - [ ] contact
 
 - [ ] send e-mail

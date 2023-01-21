@@ -12,8 +12,9 @@
   header{
     top: 0;
     position: fixed;
-    backdrop-filter: blur(8px);
     z-index: 2;
+    background: var(--background);
+    backdrop-filter: blur(3px);
   }
  
   main>*{
@@ -29,6 +30,7 @@
   #navbar{
     display:none;
     right: 0;
+    background: var(--background);
     margin-top: 30px; 
     backdrop-filter: blur(3px);
     height: 100vh;
@@ -77,6 +79,15 @@
     display: flex;
     flex-flow: column;
     height: auto;
+  }
+  
+
+  #other{
+    margin-left: 0;
+  }
+
+  .whiteBorder{
+    padding: 10px 10px;
   }
 
   /* -- timeline -- */
