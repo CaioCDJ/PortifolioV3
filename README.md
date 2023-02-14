@@ -8,25 +8,27 @@
 
 </div>
 
-#
+----
 
-<h2 align="center">EM DESENVOLVIMENTO</h2>
+<h3 align="center">EM DESENVOLVIMENTO</h3>
 
-#
+----
 
 Terceira versão do meu portifolio.
 Desenvolvido de forma simples utilizando o minimo de bibiliotecas. 
+
 
 <h2 align="center">
 
 [View Deployment](https://portifoliocaiocdj.000webhostapp.com/)
 </h2>
 
-## Tasks
+
+### Tasks
 
 - [X] intro
 
-- [ ] about
+- [X] about
 
 - [X] stack
 
@@ -40,9 +42,7 @@ Desenvolvido de forma simples utilizando o minimo de bibiliotecas.
 
 - [ ] send e-mail
 
-- [ ] animations??
-
-- [ ] texts
+- [X] texts
 
 <br>
 

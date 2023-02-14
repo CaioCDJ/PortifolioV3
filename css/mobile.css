@@ -80,7 +80,13 @@
     flex-flow: column;
     height: auto;
   }
-  
+
+  .iconsImg {
+    width: 75px;
+  }
+  #majorInfo p{
+    font-size: 15px
+  }
 
   #other{
     margin-left: 0;
@@ -91,6 +97,10 @@
   }
 
   /* -- timeline -- */
+
+  #options{
+    display: flex;
+  }
 
   .timeline{
     position:initial
@@ -150,14 +160,37 @@
     width: 100%;
   }
   
+  .imgStack{
+    width: 100%;
+    margin-top: 5px;
+  }
+
   .projectInfo div{
     font-size: 20px;
     padding: 0;
   }
 
+  .projectLink{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .projectLink div{
     font-weight: 900;
     font-size: 18px;
+   justify-self: left;
+    width: 100%;
+  }
+  .projectLink >*{
+    margin-top: 10px;
+  }
+  .projectLink div a{
+    width: 100%;
+    font-size: 20px;
   }
 
   /* -- contact -- */
