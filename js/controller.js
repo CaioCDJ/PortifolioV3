@@ -18,6 +18,25 @@ class Controller {
     this.btnExp.addEventListener("click", () => { this.hide("job", this.btnExp) });
 
     this.hide("formation", this.btnForm);
+    
+    this.intersectionAnimations();
+  }
+
+  intersectionAnimations(){
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+          if(entry.isIntersecting ){
+        
+          entry.target.classList.replace('hiddenEl', 'showEl')
+         }
+          
+      })
+      } 
+    )
+    
+    const hiddenElements = document.querySelectorAll('.hiddenEl');
+
+    hiddenElements.forEach((el)=>observer.observe(el))
   }
 
 

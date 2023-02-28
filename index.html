@@ -5,12 +5,12 @@
   <title>Portifolio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/styles.css" rel="stylesheet">
   <link href="./css/animations.css" rel="stylesheet">
-  <link href="./css/styles.css" rel="stylesheet">
   <link href="./css/mobile.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"
+  <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"
     integrity="sha256-3A7QayeQTyaWMdcuWimEMzTIauIWscnhq/A3GfKCxiA=" crossorigin="anonymous"></script>
 </head>
 
@@ -36,7 +36,7 @@
 
     <!-- introducao -->
 
-    <section id="intro" class="center">
+    <section id="intro" class="center hiddenEl">
       <div>
         <h1>Ola, eu sou o Caio.</h1>
         <h4>Desenvolvedor Full-Stack C# | .AspNetCore | NodeJS </h4>
@@ -45,7 +45,7 @@
 
     <!-- sobre/bio -->
 
-    <section id="about" class="center">
+    <section id="about" class="center hiddenEl ">
 
       <div id="bio">
         <div>
@@ -99,7 +99,7 @@
     </section>
 
     <!-- stack and skills -->
-    <section id="stack">
+    <section id="stack" class="hiddenEl">
 
       <div id="major" class="whiteBorder">
         <div id="majorInfo" class="center">
@@ -166,7 +166,7 @@
 
     <!-- Formation and Experiences -->
 
-    <section id="formation">
+    <section id="formation" class="hiddenEl">
 
       <div id="options">
         <button id="btnFormation" class="btnForm">Formação</button>
@@ -230,7 +230,7 @@
 
     <!-- Projetos -->
 
-    <section id="projects">
+    <section id="projects" class="hiddenEl">
       <h2>Projects</h2>
 
       <!-- Recyclo -->
@@ -389,7 +389,7 @@
 
     <!-- Contato -->
 
-    <section id="contact" class="center">
+    <section id="contact" class="center hiddenEl">
       <div id="contactInfo" class="center">
         <h2>Onde me Encontrar</h2>
         <p>Você tem alguma pergunta ? Gostaria de um colaborador ? Me envie um e-mail</p>
@@ -407,8 +407,8 @@
     </section>
 
   </main>
-  <script src="./js/controller.js"></script>
-  <script src="./script.js"></script>
+  <script defer src="./js/controller.js"></script>
+  <script defer src="./script.js"></script>
 </body>
 
 </html>

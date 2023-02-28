@@ -38,9 +38,9 @@ Desenvolvido de forma simples utilizando o minimo de bibiliotecas.
 
 - [X] chrome css and layout bugs
 
-- [ ] contact
-
 - [ ] send e-mail
+
+- [X] animations
 
 - [X] texts
 

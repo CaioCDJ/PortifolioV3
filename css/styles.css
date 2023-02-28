@@ -54,9 +54,6 @@ h2,h3,h4{
   letter-spacing: 1px;
 }
 
-h2{
- }
-
 section{
   height: 100vh;
   padding: 20px;
@@ -150,6 +147,7 @@ nav ul>*{
   height: 50vh;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  max-height: 500px;
 }
 
 #card ul {

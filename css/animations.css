@@ -1,4 +1,32 @@
 
+.showEl{
+ opacity: 1;
+  filter: blur(0px);
+  transition: all 1.5s;
+}
+
+.showEl .project {
+ transform:  translateX(0%); 
+  transition: all 1.5s;
+}
+.showEl .reverseRow{
+ transform:  translateX(0%); 
+  transition: all 1.5s;
+}
+
+.hiddenEl{
+  opacity: 1;
+  transition: none;
+  filter: blur(5px);
+}
+
+.hiddenEl .project {
+  transform: translateX(-100%);
+}
+.hiddenEl .reverseRow{
+  transform: translateX(100%);
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
