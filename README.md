@@ -8,41 +8,19 @@
 
 </div>
 
-----
-
-<h3 align="center">EM DESENVOLVIMENTO</h3>
-
-----
 
 Terceira versão do meu portifolio.
 Desenvolvido de forma simples utilizando o minimo de bibiliotecas. 
 
+<br>
 
-<h2 align="center">
+<h3 align="center">
 
-[View Deployment](https://portifoliocaiocdj.000webhostapp.com/)
-</h2>
+  
+[View Deployment](https://caiocdj.github.io/PortifolioV3/)
 
 
-### Tasks
-
-- [X] intro
-
-- [X] about
-
-- [X] stack
-
-- [x] timeline
-
-- [x] projects
-
-- [X] chrome css and layout bugs
-
-- [ ] send e-mail
-
-- [X] animations
-
-- [X] texts
+</h3>
 
 <br>
 
