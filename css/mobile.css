@@ -194,12 +194,16 @@
   }
 
   /* -- contact -- */
-  #contact>*{
-    width: auto;
-  }
-  #contact form{
-    width: 45vh;
+  #contact{
+    height: auto;
   }
 
+  #contact p {
+    text-align: center;
+  }
+  .contactIcon{
+    padding: 0;
+    padding-inline: 0;
+  }
 }
 

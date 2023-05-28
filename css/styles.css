@@ -131,36 +131,12 @@ nav ul>*{
 #bio h2{
   margin-bottom: 10px;
 } 
-
-#card{
-  border-style: solid;
-  border-color: var(--titleColor);
-  box-shadow: 0 0 10px #719ECE;
-  width: 70%;
-  flex-flow: column;
-  border-radius: 20px;
-  background: linear-gradient(-45deg, #0B1A29, #161925, #050610);
+#info{
+  flex-flow:column
 }
-
-#card img{
-  width: 100%;
-  height: 50vh;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+#info> img{
+  height: 80%;
   max-height: 500px;
-}
-
-#card ul {
-  padding: 15px;
-  margin-top: 15px;
-}
-
-#card ul li{
-  display: flex;
-}
-
-#card ul li>*{
-  margin-top: 5px;
 }
 
 .Redes{
@@ -507,78 +483,35 @@ nav ul>*{
 
 #contact{
   flex-flow: column;
-  height: auto;
+  height: 50vh;
 }
 
 #contact>*{
-  width: 80%;
+  margin-top: 30px;
 }
-
-#contact form{
-  display: flex;
+.contacts>*{
+  margin: 20px;
+} 
+.contactIcon{
+  padding: 10px;
+  border-radius: 100%;
+  font-size: 50px;
+  color:  var(--textColor);
   flex-flow: column;
-  margin-top: 15px;
+  padding-inline: 26px
 }
 
-#contact form h4{
-  font-style: italic;
-  text-align: center;
-}
-#contact form>*{
-  margin-top: 10px;
+.contactIcon>p{
+  font-size: 20px;
 }
 
-#contact form input{
-  padding: 10px;
-  background-color: var(--background); 
-  border-radius: 5px;
+.contactIcon:hover{
+  -webkit-box-shadow: 0px 0px 24px -5px rgba(210,210,210,1);
+  -moz-box-shadow: 0px 0px 24px -5px rgba(210,210,210,1);
+  box-shadow: 0px 0px 24px -5px rgba(210,210,210,1);
 }
 
-#contact form input:focus{
-  border-width: 2px;
-  outline: none !important;
-  border-style: solid;
-  border-color: var(--titleColor);
-  box-shadow: 0 0 10px #719ECE;
+.contactIcon:hover >* {
+  color: var(--green);
 }
 
-#contact form textarea{
-  background-color: var(--background);  
-  padding: 10px;
-  resize: none;
-  height: 200px;
-  border-radius: 5px;
-}
-
-#contact form textarea:focus{
-  border-width: 2px;
-  outline: none !important;
-  border-style: solid;
-  border-color: var(--titleColor);
-  box-shadow: 0 0 10px #719ECE;
-}
-
-#btnSend{
-  background: transparent;
-}
-
-#btnSend:hover{
-  bborder-width: 2px;
-  outline: none !important;
-  border-style: solid;
-  border-color: var(--green);
-  box-shadow: 0 0 10px #719ECE;ackground-color: var(--green);  
-}
-
-#contactInfo{
-  padding: 10px;
-  flex-flow: column;
-  justify-content: space-between;
-}
-
-#contactInfo p{
-  font-size: 13px;
-  text-align: center;
-}
-
-#contactInfo>*{margin-top: 10px;}

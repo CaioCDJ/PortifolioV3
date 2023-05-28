@@ -32,8 +32,7 @@ class Controller {
           
       })
       } 
-    )
-    
+    ) 
     const hiddenElements = document.querySelectorAll('.hiddenEl');
 
     hiddenElements.forEach((el)=>observer.observe(el))
@@ -74,20 +73,5 @@ class Controller {
       }
     })
   }
-
-  submit() {
-
-  }
-
-  success() {
-    Swal.fire(
-      'Good job!',
-      'You clicked the button!',
-      'success'
-    )
-  }
-
-  error() {
-
-  }
 }
+
